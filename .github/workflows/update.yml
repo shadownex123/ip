@@ -1,0 +1,25 @@
+name: Update Subscription
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with: {python-version: '3.9'}
+      - name: Install requests
+        run: pip install requests
+      - name: Run Update Script
+        run: python update_sub.py
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add sub
+          git commit -m "Update sub configs"
+          git push
