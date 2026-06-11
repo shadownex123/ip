@@ -1,9 +1,7 @@
 import base64
 import requests
 
-# لینک فایل آی‌پی‌های شما
 ips_url = "https://raw.githubusercontent.com/rqzbeh/rqzbeh-wp/refs/heads/main/clean-ips.json"
-# کانفیگ پایه
 base_config = "vless://b9715b66-e4c1-40c2-b130-0ff9822b2adc@{ip}:443?path=%2Fezvs%2Fcf&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=ezvs.ir&fp=random&type=ws&allowInsecure=0&sni=ezvs.ir#ReVeCiTy-{index}"
 
 ips = requests.get(ips_url).json()
