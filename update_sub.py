@@ -3,7 +3,6 @@ import requests
 
 ips_url = "https://raw.githubusercontent.com/rqzbeh/rqzbeh-wp/refs/heads/main/clean-ips.json"
 
-# کانفیگ جدید شما
 base_config = "vless://9ba99b6f-c7a4-44da-a298-d0e883a4b40e@{ip}:443?mode=auto&path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&insecure=0&host=ezvs.ir&fp=random&type=xhttp&allowInsecure=0&sni=ezvs.ir#ReVeCiTy-{index}"
 
 ips = requests.get(ips_url).json()
