@@ -2,7 +2,7 @@ import base64
 import requests
 
 ips_url = "https://raw.githubusercontent.com/rqzbeh/rqzbeh-wp/refs/heads/main/clean-ips.json"
-base_config = "vless://b9715b66-e4c1-40c2-b130-0ff9822b2adc@{ip}:443?path=%2Fezvs%2Fcf&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=ezvs.ir&fp=random&type=ws&allowInsecure=0&sni=ezvs.ir#ReVeCiTy-{index}"
+base_config = "vless://9ba99b6f-c7a4-44da-a298-d0e883a4b40e@{ip}:443?mode=auto&path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&insecure=0&host=ezvs.ir&fp=random&type=xhttp&allowInsecure=0&sni=ezvs.ir#0-1#ReVeCiTy-{index}"
 
 ips = requests.get(ips_url).json()
 
