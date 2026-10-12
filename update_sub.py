@@ -3,7 +3,7 @@ import requests
 
 ips_url = "https://raw.githubusercontent.com/rqzbeh/rqzbeh-wp/refs/heads/main/clean-ips.json"
 
-base_config = "vless://6b1b46fe-c769-4c33-8f5c-c6017805012a@{ip}:443?mode=multi&security=tls&alpn=h2&encryption=none&authority=nl-srv1.z3df1lter.uk&insecure=0&fp=random&type=grpc&serviceName=%2Fgrpc&allowInsecure=0&sni=nl-srv1.z3df1lter.uk#%5B%F0%9F%87%B3%F0%9F%87%B1%5D%20NL1-{index}"
+base_config = "vless://34283924-b06e-4bc8-866a-2bad50ad5c93@{ip}:443?path=%2F&security=tls&encryption=none&insecure=0&host=revecity.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=revecity.pages.dev#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89-{index}"
 
 ips = requests.get(ips_url).json()
 
